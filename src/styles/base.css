@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "pp-sans-big-regular";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot?#iefix") format("embedded-opentype"),
+       url("https://www.paypalobjects.com/paypal-ui/fonts/PayPalSansBig-Regular.woff2") format("woff2"),
+       url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "pp-open-regular";
+  src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "pp-open-medium";
+  src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Medium.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "pp-open-regular", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #001435;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}

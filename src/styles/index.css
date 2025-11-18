@@ -1,0 +1,22 @@
+@import './fonts.css';
+@import './layout/container.css';
+@import './layout/logo.css';
+@import './components/form/index.css';
+@import './components/language/index.css';
+@import './components/common/error.css';
+@import './components/common/loading.css';
+@import './components/recaptcha.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: pp-open-regular, "helvetica neue", arial, sans-serif;
+  line-height: 1.5;
+  color: #001435;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}

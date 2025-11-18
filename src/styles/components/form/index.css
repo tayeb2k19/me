@@ -1,0 +1,17 @@
+@import './input.css';
+@import './button.css';
+@import './separator.css';
+@import './otp.css';
+
+.recoveryOption {
+  display: block;
+  margin: 8px 0 24px;
+  color: #0070E0;
+  font-family: pp-open-medium, "helvetica neue", arial, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.recoveryOption:hover {
+  text-decoration: underline;
+}

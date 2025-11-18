@@ -1,0 +1,49 @@
+.contentContainer {
+  position: relative;
+  margin: 117px auto 72px;
+  padding: 32px 29px;
+  max-width: 414px;
+  border: 1px solid #EAECED;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile devices (iOS & Android) */
+@media (max-width: 480px) {
+  .contentContainer {
+    margin: 0;
+    padding: 24px 0;
+    max-width: 100%;
+    min-height: 100vh;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+
+  /* Add padding to inner content but not logo */
+  .contentContainer > *:not(.paypal-logo) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Apply mobile styles when device is detected as mobile */
+html[data-device="mobile"] .contentContainer {
+  margin: 0;
+  padding: 24px 0;
+  max-width: 100%;
+  min-height: 100vh;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
+html[data-device="mobile"] .contentContainer > *:not(.paypal-logo) {
+  padding-left: 24px;
+  padding-right: 24px;
+}

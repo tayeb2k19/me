@@ -1,0 +1,26 @@
+.notification {
+  margin: 0 24px 20px;
+  padding: 12px 12px 12px 36px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "pp-sans-big-regular", "Helvetica Neue", Arial, sans-serif;
+  color: #001435;
+  background: #fff7f7 url("https://www.paypalobjects.com/images/shared/icon_alert_sprite-2x.png") no-repeat;
+  background-position: 10px -387px;
+  background-size: 16px;
+  border: 1px solid #c72e2e;
+  text-align: left;
+}
+
+.notification.notification-critical {
+  background-color: #fff7f7;
+  border-color: #c72e2e;
+}
+
+@media (max-width: 480px) {
+  .notification {
+    width: calc(100% - 48px);
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}

@@ -1,0 +1,21 @@
+.recoveryOption {
+  display: block;
+  margin: 12px 24px 24px;
+  color: #0070E0;
+  font-family: "pp-sans-big-regular", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.recoveryOption:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .recoveryOption {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 0 24px;
+  }
+}

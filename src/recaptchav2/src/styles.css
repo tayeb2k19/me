@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "pp-open-regular";
+  src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "pp-open-medium";
+  src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Medium.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "pp-open-regular", "Helvetica Neue", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #001435;
+}
+
+.container {
+  max-width: 400px;
+  margin: 120px auto 0;
+  padding: 30px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.paypal-logo {
+  background: transparent url("https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg") top center no-repeat;
+  background-size: contain;
+  width: 34px;
+  height: 40px;
+  display: inline-block;
+}
+
+.recaptcha-form {
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.recaptcha-box {
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  background: #f9f9f9;
+  width: fit-content;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.recaptcha-box:hover {
+  border-color: #8f8f8f;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.recaptcha-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c1c1c1;
+  border-radius: 2px;
+  position: absolute;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.recaptcha-checkbox.loading {
+  opacity: 0;
+}
+
+.recaptcha-checkbox.checked {
+  background: #009E2A;
+  border-color: #009E2A;
+}
+
+.spinner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #4688F1;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.language-selector {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.language-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #001435;
+  cursor: pointer;
+  border: 1px solid #CBD2D6;
+  border-radius: 4px;
+  background: none;
+}
+
+.flag-icon {
+  width: 21px;
+  height: 15px;
+}
+
+.divider {
+  color: #CBD2D6;
+  margin: 0 4px;
+}
+
+.alternate-language {
+  color: #687173;
+  text-decoration: none;
+}
+
+.alternate-language:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F7F9FA;
+  padding: 14px;
+  text-align: center;
+}
+
+.footer-link {
+  color: #545D68;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link:hover {
+  color: #001435;
+}
